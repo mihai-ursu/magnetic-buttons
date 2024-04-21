@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  --color-text: #111;
+  --color-bg: #e5e3df;
+  --color-link: #000;
+  --color-link-hover: #000;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family:
+    tenon,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--color-link);
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
+  outline: none;
+  text-decoration: none;
+}
+
+main {
+  background-color: inherit;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  padding: 3rem;
+  align-content: space-between;
+  grid-column-gap: 5vw;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    'header'
+    'content'
+    'demos';
+}
