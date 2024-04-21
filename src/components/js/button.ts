@@ -5,7 +5,7 @@ interface ButtonElements {
   button: HTMLElement;
   text?: HTMLElement;
   textinner?: HTMLElement;
-  filler?: HTMLElement
+  filler?: HTMLElement;
 }
 
 // Track the mouse position
@@ -39,8 +39,8 @@ function calculateSizePosition(buttonElements: {
   return rect.width * 0.7;
 }
 
-function getButtonCenter(button: any) {
-  const rect = button.getBoundingClientRect()
+function getButtonCenter(button: HTMLElement) {
+  const rect = button.getBoundingClientRect();
   const horizontalCenter = rect.left + rect.width / 2;
   const verticalCenter = rect.top + rect.height / 2;
   return { horizontalCenter, verticalCenter };
