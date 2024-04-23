@@ -103,7 +103,8 @@ function render(buttonElements: ButtonElements, distanceToTrigger: number) {
 
 function enter(buttonElements: ButtonElements): void {
   state.hover = true;
-  buttonElements.button.classList.add("button--hover");
+  buttonElements.button.classList.add("text-white");
+  buttonElements.button.classList.remove("text-black");
   document.body.classList.add("active");
 
   if (
@@ -143,7 +144,8 @@ function enter(buttonElements: ButtonElements): void {
 }
 function leave(buttonElements: ButtonElements): void {
   state.hover = false;
-  buttonElements.button.classList.remove("button--hover");
+  buttonElements.button.classList.remove("text-white");
+  buttonElements.button.classList.add("text-black");
   document.body.classList.remove("active");
 
   if (
