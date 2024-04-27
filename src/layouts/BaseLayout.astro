@@ -1,0 +1,38 @@
+---
+import Header from "../components/Header/Header.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  body {
+    --button-border-radius: 40px;
+    --button-bg: transparent;
+    --button-stroke: #000;
+    --button-stroke-width: 1px;
+    --button-text: #000;
+    --button-bg-hover: #d8d4cf;
+    --button-stroke-hover: #000;
+    --button-stroke-width-hover: 1px;
+    --button-text-hover: #fff;
+    --cursor-stroke: #fff;
+    --cursor-fill: #fff;
+    --cursor-stroke-width: 1px;
+    --button-filler: #000;
+    --color-bg: #ccc;
+  }
+</style>

@@ -1,0 +1,8 @@
+---
+import GalleryImageWrapper from "./GalleryImageWrapper";
+import { Image } from "astro:assets";
+---
+
+<GalleryImageWrapper client:visible>
+  <Image src="/images/beer.jpg" alt="beer" width={800} height={600} />
+</GalleryImageWrapper>

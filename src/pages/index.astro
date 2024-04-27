@@ -1,46 +1,11 @@
 ---
-import MagneticButton from "../components/MagneticButton/MagneticButton.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GalleryImage from "../components/GalleryImage/GalleryImage.astro";
 import "../css/global.css";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <div class="container">
-      <MagneticButton />
-    </div>
-  </body>
-</html>
-
-<style is:global>
-  body {
-    --button-border-radius: 40px;
-    --button-bg: transparent;
-    --button-stroke: #000;
-    --button-stroke-width: 1px;
-    --button-text: #000;
-    --button-bg-hover: #d8d4cf;
-    --button-stroke-hover: #000;
-    --button-stroke-width-hover: 1px;
-    --button-text-hover: #fff;
-    --cursor-stroke: #fff;
-    --cursor-fill: #fff;
-    --cursor-stroke-width: 1px;
-    --button-filler: #000;
-    --color-bg: #ccc;
-  }
-
-  .container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
+<BaseLayout>
+  <div class="container">
+    <GalleryImage />
+  </div>
+</BaseLayout>

@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import { lerp, getMousePos, distance } from "../helpers/helpers";
+import { lerp, getMousePos, distance } from "../../../helpers/helpers";
 
 interface ButtonElements {
   button: HTMLElement;
